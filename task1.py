@@ -292,9 +292,62 @@
 # evenorodd()        
 
 # TASK 31
-a=int(input("enter:"))
-b=int(input("enter:"))
-def findrange():
-    for i in range(a,b+1):
-        print(i)
-findrange()
+# a=int(input("enter:"))
+# b=int(input("enter:"))
+# def findrange():
+#     for i in range(a,b+1):
+#         print(i)
+# findrange()
+
+# TASK 32
+# user_name="kosha"
+# user_password="123456789"
+# name=input()
+# id=input()
+
+# def find():
+#     if(user_name==name and id==user_password):
+#         print("correct")
+# find()        
+
+#  TASK 33
+# a=int(input("enter:"))
+# b=int(input("enter:"))
+# c=int(input("enter:"))
+# def add(a,b):
+#     return a+b
+# add=add(a,b)
+# ouput=add*c
+# print(ouput)
+
+# TASK 34
+# class goa:
+#     name=""
+#     drink=""
+#     def party(self):
+#         print("party in goa")
+#     def dance(self):
+#         print("dance in goa")
+# ramesh=goa()
+# suresh=goa()
+# ramesh.name="ramesh"
+# ramesh.drink="beer"
+# print(ramesh.name ,  ramesh.drink)
+# ramesh.party()
+# suresh.name="suresh"
+# suresh.drink="wine"
+# print(suresh.name ,suresh.drink)
+# suresh.dance()            
+
+# TASK 35
+# class laptop:
+#     price=0
+#     proc=""
+
+# hp=laptop()
+# hp.price=50000
+# hp.proc="i5"
+# print("hp laptop price is",hp.price)
+# print("hp laptop processor is",hp.proc)
+
+
