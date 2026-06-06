@@ -377,22 +377,51 @@
 # pear.display()
 
 # TASK 38
-class calculator:
-    def __init__(self,a,b):
-        self.a=a
-        self.b=b
-    def add(self):
-        return self.a+self.b
-    def sub(self):
-        return self.a-self.b
-    def mul(self):
-        return self.a*self.b
-    def div(self):
-        return self.a/self.b
-a=int(input("entera:"))
-b=int(input("enterb:"))
-calc=calculator(a,b)
-print("addition is",calc.add())
-print("subtraction is",calc.sub())
-print("multiplication is",calc.mul())
-print("division is",calc.div())         
+# class calculator:
+#     def __init__(self,a,b):
+#         self.a=a
+#         self.b=b
+#     def add(self):
+#         return self.a+self.b
+#     def sub(self):
+#         return self.a-self.b
+#     def mul(self):
+#         return self.a*self.b
+#     def div(self):
+#         return self.a/self.b
+# a=int(input("entera:"))
+# b=int(input("enterb:"))
+# calc=calculator(a,b)
+# print("addition is",calc.add())
+# print("subtraction is",calc.sub())
+# print("multiplication is",calc.mul())
+# print("division is",calc.div())         
+
+# TASK 39
+class laptop:
+    chargertype="b-type"
+    def __init__(self,brand,pricr):
+        self.brand=brand
+        self.price=pricr
+
+    def display(self):
+        print("the brand of the laptop is",self.brand)
+        print("the price of the laptop is",self.price)
+        print("the charger type of the laptop is",self.chargertype)    
+     
+    @classmethod 
+    def chandechargertype(cls):
+        cls.chargertype="c-type"    
+        print("charger type changed to",cls.chargertype)    
+
+    def __str__(self):
+        return f"laptop brand is {self.brand} and price is {self.price} and charger type is {self.chargertype}" 
+
+    @staticmethod
+    def info():
+        print("this is a laptop class")    
+hp=laptop("hp",50000)
+hp.display()
+hp.chandechargertype()
+print(hp)
+hp.info()        
