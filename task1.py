@@ -350,4 +350,49 @@
 # print("hp laptop price is",hp.price)
 # print("hp laptop processor is",hp.proc)
 
+# TASK 36
+# class student:
+#     def __init__(self):
+#         self.name=""
+#         self.department=""
+#     def display(self):
+#         print("name is:",self.name)
+#         print("department is:",self.department)
+# kosha=student()    
+# kosha.name="kosha"
+# kosha.department="ai&ds"
+# kosha.display()    
 
+# TASK 37
+# class fruit:
+#     def __init__(self,color,taste):
+#         self.colour=color
+#         self.taste=taste
+#     def display(self):
+#         print("the colour of the fruit is",self.colour)
+#         print("the taste of the fruit is",self.taste)
+# apple=fruit("red","sweet")
+# pear=fruit("green","tart")
+# apple.display()
+# pear.display()
+
+# TASK 38
+class calculator:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def add(self):
+        return self.a+self.b
+    def sub(self):
+        return self.a-self.b
+    def mul(self):
+        return self.a*self.b
+    def div(self):
+        return self.a/self.b
+a=int(input("entera:"))
+b=int(input("enterb:"))
+calc=calculator(a,b)
+print("addition is",calc.add())
+print("subtraction is",calc.sub())
+print("multiplication is",calc.mul())
+print("division is",calc.div())         
