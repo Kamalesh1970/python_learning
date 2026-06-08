@@ -427,19 +427,33 @@
 # hp.info()        
 
 # TASK 40
-class grandpa():
-    def phone(self):
-        print("grandpa has a phone")
+# class grandpa():
+#     def phone(self):
+#         print("grandpa has a phone")
 
-class father(grandpa):  
-    def car(self):
-        print("father has a car")
+# class father(grandpa):  
+#     def car(self):
+#         print("father has a car")
 
-class son(father):
-    def bike(self):
-        print("son has a bike") 
+# class son(father):
+#     def bike(self):
+#         print("son has a bike") 
 
-ram=son()                        
-ram.phone()
-ram.car()
-ram.bike()
+# ram=son()                        
+# ram.phone()
+# ram.car()
+# ram.bike()
+
+# TASK 41
+class a():
+    def __init__(self):
+        print("this is class a")
+class b():
+    def __init__(self):
+        super().__init__()
+        print("this is class b")   
+class c(b,a):
+    def __init__(self):
+        super().__init__()
+        print("this is class c")
+c1=c()             
