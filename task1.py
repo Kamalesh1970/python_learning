@@ -445,15 +445,93 @@
 # ram.bike()
 
 # TASK 41
-class a():
-    def __init__(self):
-        print("this is class a")
-class b():
-    def __init__(self):
-        super().__init__()
-        print("this is class b")   
-class c(b,a):
-    def __init__(self):
-        super().__init__()
-        print("this is class c")
-c1=c()             
+# class a():
+#     def __init__(self):
+#         print("this is class a")
+# class b():
+#     def __init__(self):
+#         super().__init__()
+#         print("this is class b")   
+# class c(b,a):
+#     def __init__(self):
+#         super().__init__()
+#         print("this is class c")
+# c1=c()             
+
+# TASK 42
+# class animal():
+#     def sound(self):
+#         print("animal makes a sound")
+
+# class dog(animal):
+#     def sound(self):
+#         print("dog barks")
+
+# class bird(animal):
+#     def sound(self):
+#         print("bird chirps")
+
+# b1=bird()
+# b1.sound()
+
+
+# TASK 43
+# class shape:
+#     def area(self):
+#         return 0
+# class rectangle(shape):
+#     def area(self):
+#         l=10
+#         b=20
+#         print("area of rectangle is:",l*b)
+
+# r1=rectangle()  
+# r1.area() 
+
+# TASK 44
+# class person:
+#     def __init__(self,name):
+#         self.name=name
+#         print("name is:",self.name)
+
+# class student(person):
+#     def __init__(self,grade):
+#         self.grade=grade    
+
+#     def display(self):
+#         super().__init__("kosha")
+#         print("grade is:",self.grade)
+
+# s1=student("A")
+# s1.display()
+        
+
+
+# # TASK 24
+# for i in range(5):
+#     print()
+#     for j in range(1,i+1):
+#         print("*",end="")
+    
+
+
+# a=[1,2,3,4,5,6,7,8,9]
+# print(a[:02d])
+
+nums = [10, 20, 30, 40, 50]
+
+# Style 1: simple for loop
+# for num in nums:
+#     print(num)
+
+# # Style 2: with index (use when you need position)
+# for i in range(len(nums)):
+#     print(i, nums[i])
+
+# Style 4: two pointers pattern (preview — you'll use this a LOT)
+left = 0
+right = len(nums) - 1
+while left < right:
+    print(nums[left], nums[right])
+    left += 1
+    right -= 1
