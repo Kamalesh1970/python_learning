@@ -518,7 +518,7 @@
 # a=[1,2,3,4,5,6,7,8,9]
 # print(a[:02d])
 
-nums = [10, 20, 30, 40, 50]
+# nums = [10, 20, 30, 40, 50]
 
 # Style 1: simple for loop
 # for num in nums:
@@ -529,9 +529,26 @@ nums = [10, 20, 30, 40, 50]
 #     print(i, nums[i])
 
 # Style 4: two pointers pattern (preview — you'll use this a LOT)
-left = 0
-right = len(nums) - 1
-while left < right:
-    print(nums[left], nums[right])
-    left += 1
-    right -= 1
+# left = 0
+# right = len(nums) - 1
+# while left < right:
+#     print(nums[left], nums[right])
+#     left += 1
+#     right -= 1
+
+
+# s = "racecar"
+
+# result = ""
+# for ch in s:
+#     result = ch + result
+
+# print(result)
+n=int(input())
+for i in range(2,n):
+  if n%i==0:
+    print("False")
+    break
+else:
+    print("True")
+    
